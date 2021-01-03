@@ -199,19 +199,19 @@ hr {
 
 @media only screen and (min-width: 240px) and (max-width: 766px) {
   .topPattern {
-    left: -40rem;
+    left: -37rem;
     width: 190%;
   }
 
   .container {
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
   }
 
   .bottomPattern {
     top: 63%;
     left: 40%;
     width: 60%;
-    height: 102%;
+    height: 108%;
   }
 }
