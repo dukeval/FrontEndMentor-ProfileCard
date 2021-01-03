@@ -1,15 +1,4 @@
 body {
-  /* background: url("/images/bg-pattern-top.svg");
-  background-repeat: no-repeat;
-  background-position: -65% 53%;
-  background-color: hsl(185, 75%, 39%);
-  font-size: 1.125em;
-  text-align: center;
-  line-height: 2;
-  font-family: "Kumbh Sans", sans-serif;
-  position: absolute;
-  width: 100%; */
-
   background: url("/images/bg-pattern-top.svg");
   background-color: hsl(185, 75%, 39%);
   background-repeat: no-repeat;
@@ -88,7 +77,6 @@ hr {
   top: 68%;
   left: 46%;
   height: 100%;
-  /* background-color: red; */
   z-index: -10;
   width: 60%;
 }
@@ -133,7 +121,7 @@ hr {
   .bottomPattern {
     top: 48%;
     left: 35%;
-    width: 63%;
+    width: 65%;
     height: 53%;
   }
 }
