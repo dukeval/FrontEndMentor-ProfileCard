@@ -108,7 +108,46 @@ hr {
   padding-left: 5px;
 }
 
-@media only screen and (max-width: 460px) {
+/*Laptop portrait and landscape*/
+@media only screen and (min-width: 961px) and (max-width: 1050px) {
+  body {
+    background-position: -1215% 6%;
+  }
+
+  .container {
+    margin: 50% auto;
+    width: 50%;
+  }
+
+  .bottomPattern {
+    top: 58%;
+    left: 40%;
+    width: 60%;
+    height: 53%;
+  }
+}
+
+/*Tablet/iPads portrait and landscape*/
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  body {
+    background-position: 225% 43%;
+  }
+
+  .container {
+    margin: 50% auto;
+    width: 50%;
+  }
+
+  .bottomPattern {
+    top: 58%;
+    left: 40%;
+    width: 60%;
+    height: 53%;
+  }
+}
+
+/*smaller Tablet/iPads portrait and landscape*/
+@media only screen and (min-width: 569px) and (max-width: 767px) {
   body {
     background-position: 125% 53%;
   }
@@ -123,5 +162,23 @@ hr {
     left: 35%;
     width: 65%;
     height: 53%;
+  }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 568px) {
+  body {
+    background-position: 125% 53%;
+  }
+
+  .container {
+    margin: 50% auto;
+    width: 90%;
+  }
+
+  .bottomPattern {
+    top: 48%;
+    left: 35%;
+    width: 65%;
+    height: 73%;
   }
 }
