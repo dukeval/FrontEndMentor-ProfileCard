@@ -1,0 +1,139 @@
+body {
+  /* background: url("/images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  background-position: -65% 53%;
+  background-color: hsl(185, 75%, 39%);
+  font-size: 1.125em;
+  text-align: center;
+  line-height: 2;
+  font-family: "Kumbh Sans", sans-serif;
+  position: absolute;
+  width: 100%; */
+
+  background: url("/images/bg-pattern-top.svg");
+  background-color: hsl(185, 75%, 39%);
+  background-repeat: no-repeat;
+  background-position: -80% 47%;
+  font-size: 1.125em;
+  text-align: center;
+  line-height: 2;
+  margin-top: 10%;
+  font-family: "Kumbh Sans", sans-serif;
+  position: absolute;
+  width: 100%;
+}
+
+p,
+hr {
+  margin: 0;
+}
+
+#profileImage {
+  position: relative;
+  bottom: 40px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+}
+
+.container {
+  margin: auto auto;
+  width: 30%;
+  padding: 5px;
+  position: relative;
+}
+
+.topCard {
+  background: url(/images/bg-pattern-card.svg);
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+  margin-top: 0%;
+}
+
+.middleCard {
+  background: #ffffff;
+  height: 190px;
+}
+
+.bottomCard {
+  background: #ffffff;
+  height: 80px;
+  border-radius: 0 0 15px 15px;
+  padding-bottom: 20px;
+}
+
+.bottomCard div {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  width: 30%;
+  font-weight: 700;
+}
+
+.bottomCard div span {
+  display: block;
+  line-height: 0.5;
+  font-weight: normal;
+  font-size: 0.75rem;
+  color: hsl(0, 0%, 59%);
+}
+
+.bottomPattern {
+  background: url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  top: 68%;
+  left: 46%;
+  height: 100%;
+  /* background-color: red; */
+  z-index: -10;
+  width: 60%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.name {
+  font-weight: bold;
+  position: relative;
+  bottom: 30px;
+}
+
+.location {
+  position: relative;
+  bottom: 35px;
+  color: hsl(0, 0%, 59%);
+  font-size: 0.9rem;
+}
+
+.age {
+  font-weight: normal;
+  color: hsl(0, 0%, 59%);
+  padding-left: 5px;
+}
+
+@media only screen and (max-width: 460px) {
+  body {
+    background-position: 125% 53%;
+  }
+
+  .container {
+    margin: 50% auto;
+    width: 90%;
+  }
+
+  .bottomPattern {
+    top: 48%;
+    left: 35%;
+    width: 63%;
+    height: 53%;
+  }
+}
