@@ -20,6 +20,8 @@
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
+    <div id="outputWidth"></div>
+    <div class="topPattern"></div>
     <div class="container">
       <div class="topCard"></div>
       <div class="middleCard">
@@ -45,5 +47,20 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Jude Valerius</a>.
     </div> -->
+
+    <script>
+      const showWidth = 1;
+
+      if (showWidth === 1) {
+        window.onload = () => {
+          window.onresize = function() {
+            var width = window.outerWidth;
+            var height = window.outerHeight;
+            document.getElementById("outputWidth").innerHTML =
+              "Window size: " + width.toString() + " x " + height.toString();
+          };
+        };
+      }
+    </script>
   </body>
 </html>
