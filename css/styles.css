@@ -3,10 +3,26 @@ body {
   font-size: 1.125em;
   text-align: center;
   line-height: 2;
-  margin-top: 10%;
   font-family: "Kumbh Sans", sans-serif;
-  position: absolute;
+  margin: 0;
+}
+
+.profileContent {
   width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileCard {
+  overflow: hidden;
+  /* height: 475px; */
+  height: 29.6875rem;
+  width: 332px;
+  z-index: 1;
 }
 
 p,
@@ -24,21 +40,16 @@ hr {
 }
 
 .topPattern {
-  background: url("/images/bg-pattern-top.svg");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 978px;
   position: absolute;
-  bottom: 17%;
-  left: -26%;
-  z-index: -10;
+  bottom: 42%;
+  right: 51%;
 }
 
 .container {
-  margin: auto auto;
-  width: 30%;
-  padding: 5px;
   position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .topCard {
@@ -58,9 +69,10 @@ hr {
   height: 80px;
   border-radius: 0 0 15px 15px;
   padding-bottom: 20px;
+  border-top: 1px solid hsl(0, 1%, 37%);
 }
 
-.bottomCard div {
+.bottomCard p {
   position: relative;
   top: 20px;
   display: inline-block;
@@ -68,7 +80,7 @@ hr {
   font-weight: 700;
 }
 
-.bottomCard div span {
+.bottomCard p span {
   display: block;
   line-height: 0.5;
   font-weight: normal;
@@ -77,21 +89,16 @@ hr {
 }
 
 .bottomPattern {
-  background: url(/images/bg-pattern-bottom.svg);
-  background-repeat: no-repeat;
-  font-size: 11px;
-  text-align: center;
   position: absolute;
-  top: 68%;
+  top: 50%;
   left: 50%;
-  height: 76%;
-  z-index: -10;
-  width: 50%;
+  z-index: -1;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 10px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -114,104 +121,4 @@ hr {
   font-weight: normal;
   color: hsl(0, 0%, 59%);
   padding-left: 5px;
-}
-
-/*Laptop portrait and landscape*/
-@media only screen and (min-width: 1201px) and (max-width: 1400px) {
-  .topPattern {
-    left: -30rem;
-    width: 100%;
-  }
-
-  .container {
-    margin: 0 auto;
-    width: 35%;
-  }
-
-  .bottomPattern {
-    top: 58%;
-    height: 94%;
-    /*left: 40%;
-     width: 60%;
-     */
-  }
-}
-
-/*Laptop portrait and landscape*/
-@media only screen and (min-width: 961px) and (max-width: 1200px) {
-  .topPattern {
-    left: -36rem;
-    width: 130%;
-  }
-
-  .container {
-    margin: 0 auto;
-    width: 45%;
-  }
-
-  .bottomPattern {
-    top: 61%;
-    left: 51%;
-    width: 49%;
-    height: 93%;
-  }
-}
-
-/*Tablet/iPads portrait and landscape*/
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  .topPattern {
-    left: -42rem;
-    width: 130%;
-  }
-
-  .container {
-    margin: 0 auto;
-    width: 48%;
-  }
-
-  .bottomPattern {
-    top: 74%;
-    left: 44%;
-    width: 56%;
-    height: 85%;
-  }
-}
-
-/*smaller Tablet/iPads portrait and landscape*/
-@media only screen and (min-width: 569px) and (max-width: 767px) {
-  .topPattern {
-    left: -45rem;
-    width: 140%;
-  }
-
-  .container {
-    margin: 0 auto;
-    width: 60%;
-  }
-
-  .bottomPattern {
-    top: 67%;
-    left: 41%;
-    width: 60%;
-    height: 102%;
-  }
-}
-
-@media only screen and (min-width: 240px) and (max-width: 766px) {
-  .topPattern {
-    left: -37rem;
-    width: 190%;
-  }
-
-  .container {
-    margin: 0 auto;
-    width: 80%;
-  }
-
-  .bottomPattern {
-    top: 63%;
-    left: 40%;
-    width: 60%;
-    height: 108%;
-  }
 }

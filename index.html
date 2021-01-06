@@ -21,34 +21,47 @@
   </head>
   <body>
     <div id="outputWidth"></div>
-    <div class="topPattern"></div>
     <div class="container">
-      <div class="topCard"></div>
-      <div class="middleCard">
-        <img
-          id="profileImage"
-          src="images/image-victor.jpg"
-          alt="profilePicture"
-        />
-        <p class="name">Victor Crest <span class="age"> 26</span></p>
-        <p class="location">London</p>
-      </div>
-      <hr />
-      <div class="bottomCard">
-        <div>80K <span>Followers</span></div>
-        <div>803K <span>Likes</span></div>
-        <div>1.4K <span>Photos</span></div>
-      </div>
-    </div>
-    <div class="bottomPattern"></div>
-    <!-- <div class="attribution">
+      <div class="profileContent">
+        <div class="profileCard">
+            <div class="topCard"></div>
+            <div class="middleCard">
+              <img
+                id="profileImage"
+                src="images/image-victor.jpg"
+                alt="Victor Crest"
+              />
+              <p class="name">Victor Crest <span class="age"> 26</span></p>
+              <p class="location">London</p>
+            </div>
+            <div class="bottomCard">
+              <p>80K <span>Followers</span></p>
+              <p>803K <span>Likes</span></p>
+              <p>1.4K <span>Photos</span></p>
+            </div>
+      <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Jude Valerius</a>.
+      >. Coded by <a href="https://github.com/dukeval/FrontEndMentor-ProfileCard">Jude Valerius</a>.
     </div> 
+          </div>
+        </div>
+      <img
+        src="images/bg-pattern-top.svg"
+        alt="top circle parttern"
+        class="topPattern"
+      />
+      <img
+        src="images/bg-pattern-bottom.svg"
+        alt="bottom circle pattern"
+        class="bottomPattern"
+      />
+      </div>
+    </div>
 
-    <script>
+
+    <!--<script>
       const showWidth = 1;
 
       if (showWidth === 1) {
@@ -62,5 +75,6 @@
         };
       }
     </script>-->
+    </div>
   </body>
 </html>
